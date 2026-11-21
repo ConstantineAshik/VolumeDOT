@@ -1,0 +1,1 @@
+Improve reproducible release packaging by excluding checkout-dependent Git metadata. Add Linux F-Droid metadata validation and developer-signature verification configuration. Keep app behavior and existing update compatibility unchanged.

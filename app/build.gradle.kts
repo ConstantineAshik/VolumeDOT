@@ -18,14 +18,15 @@ if (!fdroidBuild && signingFile.isFile && !hasLocalSigning) {
 
 android {
     namespace = "com.ashik.volumedot"
+    buildToolsVersion = "36.0.0"
     compileSdk { version = release(37) { minorApiLevel = 1 } }
 
     defaultConfig {
         applicationId = "com.ashik.floatvol"
         minSdk = 28
         targetSdk = 37
-        versionCode = 10
-        versionName = "3.0.2"
+        versionCode = 11
+        versionName = "3.0.3"
     }
 
     signingConfigs {
@@ -53,6 +54,8 @@ android {
 
     buildTypes {
         release {
+            // Avoid embedding checkout-dependent Git metadata in the APK.
+            vcsInfo { include = false }
             isMinifyEnabled = true
             isShrinkResources = true
             signingConfig = signingConfigs.findByName("localRelease")

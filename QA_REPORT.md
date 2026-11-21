@@ -1,3 +1,15 @@
+# VolumeDot 3.0.3 publication QA
+
+Validated 21 November 2026.
+
+- 64 automated tests passed; debug/release lint and unsigned release/debug builds passed locally.
+- Release VCS metadata is disabled to keep packaging independent of checkout history. Build tools are explicitly pinned to 36.0.0.
+- Tool-update notices remain visible as informational; other warnings and errors still fail lint.
+- Public source, license, Fastlane assets and GitHub release publishing are configured. The 3.0.2 release and tag are retained unchanged.
+- Actual fdroid readmeta and fdroid lint passed on a clean Linux GitHub runner. The candidate retains its disable field pending an official-server build and reproducibility check.
+- Remaining physical-device and F-Droid review limitations below still apply.
+
+---
 # VolumeDot 3.0.2 F-Droid preparation QA
 
 Validated 21 November 2026.
@@ -70,7 +82,7 @@ Native-graphics Robolectric tests rendered the real Compose screens, not HTML mo
 - `tablet-home.png`
 - `phone-rtl.png`
 
-Configurations include a 393Ã—851dp phone, 320Ã—640dp compact phone at 1.3Ã— font scale, and 1024Ã—900dp tablet. RTL review uses an Arabic locale and an explicit navigation-order assertion. Copy remains English; no language translations were added.
+Configurations include a 393Ãƒâ€”851dp phone, 320Ãƒâ€”640dp compact phone at 1.3Ãƒâ€” font scale, and 1024Ãƒâ€”900dp tablet. RTL review uses an Arabic locale and an explicit navigation-order assertion. Copy remains English; no language translations were added.
 
 The review identified and corrected the narrow-screen status-chip/branding wrap. The default panel was reduced to the main slider row; secondary/legacy quick controls remain available through the controls menu. Both themes, the appearance studio, compact header, tablet pairing, vertical panel and mirrored layout were visually inspected.
 

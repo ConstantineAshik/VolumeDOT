@@ -1,4 +1,4 @@
-﻿Categories:
+Categories:
   - System
 License: Apache-2.0
 SourceCode: https://github.com/ConstantineAshik/VolumeDOT
@@ -13,10 +13,10 @@ Binaries: https://github.com/ConstantineAshik/VolumeDOT/releases/download/v%v/Vo
 AllowedAPKSigningKeys: 0c70733887102d384d0bc655ea8add52d51e2ab1fd07d4c9bf82728cb43450e9
 
 Builds:
-  - versionName: 3.0.2
-    versionCode: 10
+  - versionName: 3.0.3
+    versionCode: 11
     disable: Pending F-Droid server build and reproducibility validation
-    commit: a75491ee2eacfa2cdc0442adbf4ba3bb08b978b1
+    commit: v3.0.3
     subdir: app
     gradle:
       - yes
@@ -25,5 +25,5 @@ Builds:
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: 3.0.2
-CurrentVersionCode: 10
+CurrentVersion: 3.0.3
+CurrentVersionCode: 11

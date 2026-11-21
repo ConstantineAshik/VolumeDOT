@@ -1,4 +1,4 @@
-# VolumeDot 3.0.2
+# VolumeDot 3.0.3
 
 A floating Android volume controller redesigned with Jetpack Compose and stable Material 3 Expressive components.
 
@@ -25,10 +25,10 @@ On Windows, use `gradlew.bat`. Lint warnings fail builds. CI installs the matchi
 
 ## Install
 
-Install `VolumeDot-v3.0.2-signed-release.apk` as an update, or use:
+Install `VolumeDot-v3.0.3-signed-release.apk` as an update, or use:
 
 ```shell
-adb install -r VolumeDot-v3.0.2-signed-release.apk
+adb install -r VolumeDot-v3.0.3-signed-release.apk
 ```
 
 Grant **Appear on top** to enable the controller. Screenshot accessibility is optional. Notifications provide Stop and Reset actions. Unrestricted battery access may help background availability on some phones; Android and manufacturer restrictions still apply.

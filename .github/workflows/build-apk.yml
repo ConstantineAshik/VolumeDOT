@@ -71,3 +71,13 @@ jobs:
         with:
           name: VolumeDot-debug-apk
           path: app/build/outputs/apk/debug/app-debug.apk
+
+      - name: Upload QA reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: VolumeDot-qa-reports
+          path: |
+            app/build/test-results/testDebugUnitTest/
+            app/build/reports/tests/testDebugUnitTest/
+            app/build/reports/lint-results-*.html

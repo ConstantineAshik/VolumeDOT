@@ -1,12 +1,12 @@
-﻿# F-Droid preparation
+# F-Droid preparation
 
 VolumeDot is licensed under Apache-2.0. Public source: https://github.com/ConstantineAshik/VolumeDOT.
 
 ## Published release
 
-Version 3.0.2 (versionCode 10) is tagged v3.0.2 at a75491ee2eacfa2cdc0442adbf4ba3bb08b978b1. The source includes the full Kotlin/Compose implementation, Gradle wrapper, license and Fastlane listing assets.
+Version 3.0.3 (versionCode 11) fixes reproducible packaging after the initial 3.0.2 publication. The release tag is v3.0.3. The source includes the full Kotlin/Compose implementation, Gradle wrapper, license and Fastlane listing assets.
 
-Release APK and checksum: https://github.com/ConstantineAshik/VolumeDOT/releases/tag/v3.0.2.
+Release APK and checksum: https://github.com/ConstantineAshik/VolumeDOT/releases/tag/v3.0.3.
 
 Private signing credentials, the keystore, local SDK paths, caches and generated APKs are excluded from Git. The initial publication was checked against the actual local signing passwords before pushing.
 
@@ -23,7 +23,7 @@ For personal signed builds, copy signing.properties.example to signing.propertie
 
 ## Metadata and assets
 
-Candidate: fdroid/metadata/com.ashik.floatvol.yml. The filename retains the installed application ID so existing Android installations can update. The build pins the full release source hash.
+Candidate: fdroid/metadata/com.ashik.floatvol.yml. The filename retains the installed application ID so existing Android installations can update. The submission recipe must pin the full release source hash.
 
 Fastlane English descriptions, changelogs, a 512px launcher icon and four screenshots are in fastlane/metadata/android/en-US. Screenshots are native Robolectric renders of the real UI, not physical-device captures.
 
@@ -33,7 +33,7 @@ GitHub Actions runs the real fdroid readmeta and fdroid lint commands on Linux w
 
 The candidate uses Binaries and AllowedAPKSigningKeys to request verification of the published developer-signed APK. This preserves the existing developer certificate for Android updates; no private key is shared. F-Droid will only distribute this APK if its own rebuild matches.
 
-The local signed/unsigned builds passed apksigcopier signature-copy verification. Reproducibility on the actual F-Droid server is still pending, so the candidate build remains explicitly disabled. Do not remove that safeguard based on metadata lint alone.
+Release 3.0.3 disables generated VCS information so the APK does not depend on whether or when the source checkout was committed. Compare independent unsigned builds against the published signed APK using apksigcopier before enabling the candidate. Reproducibility on the actual F-Droid server is still pending, so the candidate build remains explicitly disabled. Do not remove that safeguard based on metadata lint alone.
 
 ## Dependency review
 
