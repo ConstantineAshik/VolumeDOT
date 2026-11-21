@@ -23,6 +23,8 @@ jobs:
         run: |
           mkdir -p config
           curl --fail --location --retry 3 https://gitlab.com/fdroid/fdroiddata/-/raw/master/config/categories.yml -o config/categories.yml
+          # Lint needs official category names, without repository icon assets.
+          python -c "from pathlib import Path; from ruamel.yaml import YAML; y=YAML(); data=y.load(Path('config/categories.yml')); y.dump({'categories': list(data)}, Path('config.yml'))"
           fdroid readmeta
           fdroid lint com.ashik.floatvol
 
