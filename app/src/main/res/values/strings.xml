@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">VolumeDot</string>
+    <string name="ui_preview_format">Live Preview • %1$ddp • %2$s • %3$s</string>
+    <string name="ui_size_dp">%1$ddp</string>
+    <string name="ui_percent">%1$d%%</string>
+    <string name="ui_value_unit">%1$d%2$s</string>
+</resources>

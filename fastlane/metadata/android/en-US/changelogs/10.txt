@@ -1,0 +1,1 @@
+Add Apache-2.0 licensing and F-Droid listing metadata. Support unsigned command-line release builds without a private keystore, while retaining optional local signing. Keep private keys and build artifacts out of source control.

@@ -1,0 +1,26 @@
+Categories:
+  - System
+License: Apache-2.0
+SourceCode: https://github.com/ConstantineAshik/VolumeDOT
+IssueTracker: https://github.com/ConstantineAshik/VolumeDOT/issues
+
+AutoName: VolumeDot
+
+RepoType: git
+Repo: https://github.com/ConstantineAshik/VolumeDOT.git
+
+Builds:
+  - versionName: 3.0.2
+    versionCode: 10
+    disable: Pending public source release, signing decision and F-Droid build validation
+    commit: v3.0.2
+    subdir: app
+    gradle:
+      - yes
+    gradleprops:
+      - fdroid=true
+
+AutoUpdateMode: Version
+UpdateCheckMode: Tags
+CurrentVersion: 3.0.2
+CurrentVersionCode: 10

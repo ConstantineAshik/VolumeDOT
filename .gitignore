@@ -1,0 +1,28 @@
+﻿# Gradle / Android build output
+.gradle/
+.kotlin/
+**/build/
+local.properties
+*.log
+
+# Local signing material: never publish these files
+signing.properties
+**/*.jks
+**/*.keystore
+**/*.p12
+**/*.pfx
+
+# Packaged build artifacts are release downloads, not source inputs
+*.apk
+*.aab
+*.apks
+*.idsig
+
+# IDE / local tools
+.idea/
+*.iml
+.vscode/
+.venv/
+__pycache__/
+.DS_Store
+Thumbs.db

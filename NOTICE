@@ -1,0 +1,12 @@
+﻿VolumeDot
+Copyright 2026 VolumeDot contributors
+
+Licensed under the Apache License, Version 2.0. See LICENSE.
+
+Material Symbols Rounded icons are from Google's Material Design Icons project:
+https://github.com/google/material-design-icons
+Their Apache-2.0 license is included in app/src/main/assets/MaterialSymbols-LICENSE.txt.
+
+AndroidX, Material Components, Kotlin and the Gradle build tools retain their
+respective upstream licenses and notices. Dependency license details are recorded
+in the F-Droid preparation report.

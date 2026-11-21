@@ -1,0 +1,2 @@
+-keep class com.ashik.volumedot.** { *; }
+-keep class com.ashik.floatvol.FloatVolAccessibilityService { *; }

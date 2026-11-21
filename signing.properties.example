@@ -1,0 +1,6 @@
+﻿# Copy to signing.properties for a developer-signed local release.
+# The real file and keystore must never be committed.
+storeFile=/absolute/path/to/private-release.jks
+storePassword=SET_LOCALLY
+keyAlias=SET_LOCALLY
+keyPassword=SET_LOCALLY

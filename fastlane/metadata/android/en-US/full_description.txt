@@ -1,0 +1,16 @@
+Keep your phone's volume controls within reach with a customizable floating button.
+
+VolumeDot gives you a compact volume panel over other apps, with media, ring and alarm controls. Choose a horizontal or vertical slider, mute media, drag the controller by its handle, or let it snap to a screen edge.
+
+Make it yours:
+* Material 3 Expressive screens with light, dark and system themes
+* Optional wallpaper-based colors on Android 12 and later
+* Eight fallback accents, multiple bubble shapes and six icon modes
+* Preset or custom emojis, adjustable size, corners and opacity
+* Configurable auto-hide, idle dimming, touch feedback and motion
+
+Use gestures to open controls, move the bubble, adjust volume while its position is locked, or mute media. Optional screenshot accessibility support lets you take a screenshot with a double tap while the controller is hidden.
+
+Overlay access is needed to display the floating controller. Screenshot accessibility is optional and used only for the screenshot action. Notifications provide controller actions; optional unrestricted battery access may improve background availability on some phones. System and manufacturer background restrictions still apply.
+
+Supports Android 9 and later. No account, advertisements or analytics are included.

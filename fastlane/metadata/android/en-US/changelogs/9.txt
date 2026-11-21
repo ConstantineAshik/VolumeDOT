@@ -1,0 +1,1 @@
+Rename the app and visible branding to VolumeDot. Preserve existing settings, launcher shortcuts and the registered screenshot accessibility component.
