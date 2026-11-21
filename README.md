@@ -1,4 +1,4 @@
-﻿# VolumeDot 3.0.2
+# VolumeDot 3.0.2
 
 A floating Android volume controller redesigned with Jetpack Compose and stable Material 3 Expressive components.
 
@@ -47,4 +47,3 @@ Physical-device validation of screenshots, system permission hand-offs and overn
 ## Source, license and F-Droid
 
 Source: https://github.com/ConstantineAshik/VolumeDOT. Licensed under Apache-2.0; see LICENSE and NOTICE. See [FDROID.md](FDROID.md) for unsigned builds, optional private signing, listing metadata and outstanding submission steps. Public-clone release builds are unsigned by default; existing local signed builds use ignored signing.properties.
-

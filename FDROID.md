@@ -1,4 +1,4 @@
-﻿# F-Droid preparation
+# F-Droid preparation
 
 VolumeDot is licensed under Apache-2.0. Its public upstream is https://github.com/ConstantineAshik/VolumeDOT. Release source and tags are maintained in that repository. F-Droid inclusion is pending the signing and server-validation steps below.
 
@@ -35,4 +35,3 @@ Direct runtime dependencies are AndroidX, Kotlin and Google Material Components 
 5. Submit the reviewed metadata in a new-app merge request to fdroiddata and follow maintainer feedback.
 
 No F-Droid server build or inclusion merge request has been performed. Windows has no configured Linux container/WSL build environment here. See QA_REPORT.md for local Android verification and remaining physical-device checks.
-

@@ -1,4 +1,4 @@
-﻿# VolumeDot 3.0.2 F-Droid preparation QA
+# VolumeDot 3.0.2 F-Droid preparation QA
 
 Validated 21 November 2026.
 
@@ -120,4 +120,3 @@ The packaged application label is **VolumeDot**. The project, Kotlin namespace, 
 Six additional compatibility cases verify the displayed application/launcher labels, old launcher alias targeting `com.ashik.volumedot.MainActivity`, stable registered accessibility component using the new implementation, and readability of existing preference values. The application ID, signing identity, notification channel and preference-file ID remain unchanged to support updates. The full final suite has 63 passing cases and both lint variants have zero findings.
 
 Physical update/install and accessibility-grant retention on a phone remain device-only checks; no physical-device run is claimed.
-

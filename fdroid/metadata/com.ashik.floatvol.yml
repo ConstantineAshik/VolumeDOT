@@ -1,4 +1,4 @@
-Categories:
+﻿Categories:
   - System
 License: Apache-2.0
 SourceCode: https://github.com/ConstantineAshik/VolumeDOT
@@ -12,8 +12,8 @@ Repo: https://github.com/ConstantineAshik/VolumeDOT.git
 Builds:
   - versionName: 3.0.2
     versionCode: 10
-    disable: Pending public source release, signing decision and F-Droid build validation
-    commit: v3.0.2
+    disable: Pending signing decision and F-Droid server build validation
+    commit: a75491ee2eacfa2cdc0442adbf4ba3bb08b978b1
     subdir: app
     gradle:
       - yes
