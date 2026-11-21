@@ -2,7 +2,10 @@
 
 Validated 21 November 2026.
 
+- Independent Ubuntu CI passed all 64 tests, debug/release lint and both APK builds: https://github.com/ConstantineAshik/VolumeDOT/actions/runs/44916683227.
+- The Ubuntu unsigned APK passed apksigcopier signature-copy verification against the developer-signed Windows APK.
 - 64 automated tests passed; debug/release lint and unsigned release/debug builds passed locally.
+- Signed release built after the v3.0.3 commit/tag passed apksigcopier verification against the unsigned APK built before that commit. The developer certificate is unchanged.
 - Release VCS metadata is disabled to keep packaging independent of checkout history. Build tools are explicitly pinned to 36.0.0.
 - Tool-update notices remain visible as informational; other warnings and errors still fail lint.
 - Public source, license, Fastlane assets and GitHub release publishing are configured. The 3.0.2 release and tag are retained unchanged.
@@ -82,7 +85,7 @@ Native-graphics Robolectric tests rendered the real Compose screens, not HTML mo
 - `tablet-home.png`
 - `phone-rtl.png`
 
-Configurations include a 393Ãƒâ€”851dp phone, 320Ãƒâ€”640dp compact phone at 1.3Ãƒâ€” font scale, and 1024Ãƒâ€”900dp tablet. RTL review uses an Arabic locale and an explicit navigation-order assertion. Copy remains English; no language translations were added.
+Configurations include a 393ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â851dp phone, 320ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â640dp compact phone at 1.3ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â font scale, and 1024ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â900dp tablet. RTL review uses an Arabic locale and an explicit navigation-order assertion. Copy remains English; no language translations were added.
 
 The review identified and corrected the narrow-screen status-chip/branding wrap. The default panel was reduced to the main slider row; secondary/legacy quick controls remain available through the controls menu. Both themes, the appearance studio, compact header, tablet pairing, vertical panel and mirrored layout were visually inspected.
 

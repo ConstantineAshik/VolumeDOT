@@ -23,7 +23,7 @@ For personal signed builds, copy signing.properties.example to signing.propertie
 
 ## Metadata and assets
 
-Candidate: fdroid/metadata/com.ashik.floatvol.yml. The filename retains the installed application ID so existing Android installations can update. The submission recipe must pin the full release source hash.
+Candidate: fdroid/metadata/com.ashik.floatvol.yml. The filename retains the installed application ID so existing Android installations can update. The submission recipe pins release commit 8cc1284d1cacde1c336d26a31f7b8c1236870691.
 
 Fastlane English descriptions, changelogs, a 512px launcher icon and four screenshots are in fastlane/metadata/android/en-US. Screenshots are native Robolectric renders of the real UI, not physical-device captures.
 
@@ -33,7 +33,7 @@ GitHub Actions runs the real fdroid readmeta and fdroid lint commands on Linux w
 
 The candidate uses Binaries and AllowedAPKSigningKeys to request verification of the published developer-signed APK. This preserves the existing developer certificate for Android updates; no private key is shared. F-Droid will only distribute this APK if its own rebuild matches.
 
-Release 3.0.3 disables generated VCS information so the APK does not depend on whether or when the source checkout was committed. Compare independent unsigned builds against the published signed APK using apksigcopier before enabling the candidate. Reproducibility on the actual F-Droid server is still pending, so the candidate build remains explicitly disabled. Do not remove that safeguard based on metadata lint alone.
+Release 3.0.3 disables generated VCS information so the APK does not depend on whether or when the source checkout was committed. The unsigned Ubuntu CI build passed apksigcopier signature-copy verification against the developer-signed Windows APK. All 64 Ubuntu tests, lint and builds passed: https://github.com/ConstantineAshik/VolumeDOT/actions/runs/44916683227. The actual F-Droid server still needs to validate its own rebuild and source scan, so the candidate build remains explicitly disabled. Do not remove that safeguard based on metadata lint alone.
 
 ## Dependency review
 
