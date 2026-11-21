@@ -21,6 +21,8 @@ jobs:
       - name: Validate F-Droid metadata
         working-directory: fdroid
         run: |
+          mkdir -p config
+          curl --fail --location --retry 3 https://gitlab.com/fdroid/fdroiddata/-/raw/master/config/categories.yml -o config/categories.yml
           fdroid readmeta
           fdroid lint com.ashik.floatvol
 
