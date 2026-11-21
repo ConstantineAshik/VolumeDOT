@@ -46,6 +46,9 @@ android {
     lint {
         abortOnError = true
         warningsAsErrors = true
+        // Keep pinned release builds independent of online tool-update notices.
+        // Report available upgrades without treating them as app correctness errors.
+        informational += "AndroidGradlePluginVersion"
     }
 
     buildTypes {

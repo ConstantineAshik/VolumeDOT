@@ -8,11 +8,14 @@ AutoName: VolumeDot
 
 RepoType: git
 Repo: https://github.com/ConstantineAshik/VolumeDOT.git
+Binaries: https://github.com/ConstantineAshik/VolumeDOT/releases/download/v%v/VolumeDot-v%v-signed-release.apk
+
+AllowedAPKSigningKeys: 0c70733887102d384d0bc655ea8add52d51e2ab1fd07d4c9bf82728cb43450e9
 
 Builds:
   - versionName: 3.0.2
     versionCode: 10
-    disable: Pending signing decision and F-Droid server build validation
+    disable: Pending F-Droid server build and reproducibility validation
     commit: a75491ee2eacfa2cdc0442adbf4ba3bb08b978b1
     subdir: app
     gradle:
